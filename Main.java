@@ -26,3 +26,11 @@ public class Main {
             } catch (ArithmeticException e) {
                 System.out.println("Error in Division: " + e.getMessage());
             }
+            System.out.println("Square of first number: " + Square.square(a));
+            System.out.println("Cube of first number: " + Cube.cube(a));
+
+             try {
+                System.out.println("Square Root of first number: " + SquareRoot.sqrt(a));
+            } catch (ArithmeticException e) {
+                System.out.println("Error in Square Root: " + e.getMessage());
+            }
