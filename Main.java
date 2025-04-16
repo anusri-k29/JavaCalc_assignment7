@@ -34,3 +34,13 @@ public class Main {
             } catch (ArithmeticException e) {
                 System.out.println("Error in Square Root: " + e.getMessage());
             }
+        } catch (InputMismatchException e) {
+            System.out.println("Invalid input! Please enter numeric values.");
+        } catch (Exception e) {
+            System.out.println("An unexpected error occurred: " + e.getMessage());
+        } finally {
+            sc.close();
+        }
+    }
+}
+
